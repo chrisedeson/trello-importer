@@ -1,0 +1,255 @@
+{
+  "name": "Self - Personality Profiling SaaS",
+  "lists": [
+    {
+      "name": "Backlog / Ideas",
+      "cards": [
+        {
+          "name": "Build a psychological profiling SaaS (Project: Self)"
+        },
+        {
+          "name": "Design custom personality types (Big Five, MBTI, DISC, Tim Lahaye)"
+        },
+        {
+          "name": "Set tone for branding: calming, insightful, scientific, beautiful"
+        },
+        {
+          "name": "Ethical guidelines for data privacy & consent"
+        },
+        {
+          "name": "Notifications via email or site reminders"
+        },
+        {
+          "name": "Add a chatbot for self-discovery guidance"
+        },
+        {
+          "name": "Enable anonymous test mode"
+        },
+        {
+          "name": "Export results as PDF"
+        }
+      ]
+    },
+    {
+      "name": "MVP (Phase 1 - Core System)",
+      "cards": [
+        {
+          "name": "Define SMART goals for MVP"
+        },
+        {
+          "name": "Set up Trello, GitHub, and project README"
+        },
+        {
+          "name": "Create wireframes / mock UI of onboarding, test, result page"
+        },
+        {
+          "name": "Set up Next.js + TypeScript project"
+        },
+        {
+          "name": "Install TailwindCSS + shadcn/ui components"
+        },
+        {
+          "name": "Add Prisma + connect to Neon PostgreSQL"
+        },
+        {
+          "name": "Deploy staging site to AWS"
+        },
+        {
+          "name": "Set up Sentry for error monitoring"
+        },
+        {
+          "name": "Draft 20\u201330 questions across trait dimensions"
+        },
+        {
+          "name": "Create questions.json or questions.ts"
+        },
+        {
+          "name": "Build answer model & scoring logic (rule-based)"
+        },
+        {
+          "name": "Store answers in state"
+        },
+        {
+          "name": "Display results based on score ranges"
+        },
+        {
+          "name": "Assign personality types with names + descriptions"
+        },
+        {
+          "name": "Design results page (score bars or radar chart)"
+        },
+        {
+          "name": "Create personality type component"
+        },
+        {
+          "name": "Store results in DB"
+        },
+        {
+          "name": "Allow user to retake the test"
+        },
+        {
+          "name": "Set up email sending (SendGrid or Resend)"
+        },
+        {
+          "name": "Send personality report after completion"
+        },
+        {
+          "name": "Set up email reminders (weekly advice)"
+        },
+        {
+          "name": "Add basic authentication"
+        },
+        {
+          "name": "Add user dashboard to view history"
+        },
+        {
+          "name": "Add loading screens and feedback"
+        }
+      ]
+    },
+    {
+      "name": "In Progress",
+      "cards": []
+    },
+    {
+      "name": "Done",
+      "cards": []
+    },
+    {
+      "name": "Future Features (Phase 2+)",
+      "cards": [
+        {
+          "name": "Add chatbot (Coach Self) to answer questions"
+        },
+        {
+          "name": "Train AI on user chat + data to give custom advice"
+        },
+        {
+          "name": "Summarize behavior across time"
+        },
+        {
+          "name": "Let user ask 'Why do I act like this?' and get LLM insight"
+        },
+        {
+          "name": "Add consent-based webcam facial emotion detection"
+        },
+        {
+          "name": "Add social media import (Twitter, Instagram insights)"
+        },
+        {
+          "name": "Track click behavior and interactions to infer mood"
+        },
+        {
+          "name": "Use mobile gyroscope/microphone to analyze energy"
+        },
+        {
+          "name": "Build React Native / Expo app"
+        },
+        {
+          "name": "Add push notifications"
+        },
+        {
+          "name": "Sync results across web + app"
+        },
+        {
+          "name": "Add premium in-app coaching sessions"
+        },
+        {
+          "name": "Journal/diary integration"
+        },
+        {
+          "name": "Daily self-awareness reminders"
+        }
+      ]
+    },
+    {
+      "name": "Monetization",
+      "cards": [
+        {
+          "name": "Offer freemium model with limited tests"
+        },
+        {
+          "name": "Add pricing page with value explanation"
+        },
+        {
+          "name": "Integrate Stripe for subscription"
+        },
+        {
+          "name": "Premium feature: PDF export, private AI coach, personality history"
+        },
+        {
+          "name": "Affiliate marketing (books, courses)"
+        },
+        {
+          "name": "Offer white-label version to therapists/coaches"
+        },
+        {
+          "name": "Allow gifting of Self Premium to friends"
+        }
+      ]
+    },
+    {
+      "name": "Metrics & Analytics",
+      "cards": [
+        {
+          "name": "Track test completions"
+        },
+        {
+          "name": "Track which traits are most common"
+        },
+        {
+          "name": "Monitor funnel drop-off"
+        },
+        {
+          "name": "Use PostHog or Plausible for analytics"
+        },
+        {
+          "name": "Track email open rates and engagement"
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure & DevOps",
+      "cards": [
+        {
+          "name": "Set up GitHub Actions CI/CD"
+        },
+        {
+          "name": "Automatic deployment to AWS (or Vercel for dev)"
+        },
+        {
+          "name": "Secure .env management across environments"
+        },
+        {
+          "name": "Connect Prisma to Neon DB with schema sync"
+        },
+        {
+          "name": "Add Sentry for monitoring & alerts"
+        },
+        {
+          "name": "Backup DB periodically"
+        }
+      ]
+    },
+    {
+      "name": "Research & Experiments",
+      "cards": [
+        {
+          "name": "Study Big Five, DISC, MBTI mappings"
+        },
+        {
+          "name": "Analyze Tim Lahaye\u2019s trait categorization"
+        },
+        {
+          "name": "Experiment with trait clustering in AI"
+        },
+        {
+          "name": "Run a small beta test with 10 users"
+        },
+        {
+          "name": "Gather real personality data anonymously"
+        }
+      ]
+    }
+  ]
+}
