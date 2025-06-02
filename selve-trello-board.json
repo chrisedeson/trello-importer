@@ -5,28 +5,44 @@
       "name": "Backlog / Ideas",
       "cards": [
         {
-          "name": "Build a psychological profiling SaaS (Project: Self)"
+          "name": "Build a psychological profiling SaaS (Project: Self)",
+          "labels": ["planning"],
+          "description": "Overall project vision: develop a web-based psychological profiling tool called “Self” aimed at individual self-awareness."
         },
         {
-          "name": "Design custom personality types (Big Five, MBTI, DISC, Tim Lahaye)"
+          "name": "Design custom personality types (Big Five, MBTI, DISC, Tim Lahaye)",
+          "labels": ["research"],
+          "description": "Research and combine established models (Big Five, MBTI, DISC, Tim Lahaye) to create proprietary personality archetypes."
         },
         {
-          "name": "Set tone for branding: calming, insightful, scientific, beautiful"
+          "name": "Set tone for branding: calming, insightful, scientific, beautiful",
+          "labels": ["design", "business"],
+          "description": "Define brand voice and visual style guidelines: use a calming color palette, professional typography, and a science-forward tone."
         },
         {
-          "name": "Ethical guidelines for data privacy & consent"
+          "name": "Ethical guidelines for data privacy & consent",
+          "labels": ["legal", "research"],
+          "description": "Draft Terms of Service and Privacy Policy—ensure explicit user consent, data ownership, opt-in tracking, and compliance with GDPR/Nigeria Data Protection Act."
         },
         {
-          "name": "Notifications via email or site reminders"
+          "name": "Notifications via email or site reminders",
+          "labels": ["backend", "feature"],
+          "description": "Plan how in-app and email notifications will work—define triggers (e.g., weekly advice emails or in-site pop-ups) and necessary backend endpoints."
         },
         {
-          "name": "Add a chatbot for self-discovery guidance"
+          "name": "Add a chatbot for self-discovery guidance",
+          "labels": ["ai", "feature"],
+          "description": "Conceptualize an AI-powered chatbot (future phase) that answers user questions about their personality results and offers insights."
         },
         {
-          "name": "Enable anonymous test mode"
+          "name": "Enable anonymous test mode",
+          "labels": ["feature", "backend"],
+          "description": "Allow users to try the personality test without creating an account. Store anonymous session data temporarily until signup."
         },
         {
-          "name": "Export results as PDF"
+          "name": "Export results as PDF",
+          "labels": ["backend", "feature"],
+          "description": "Enable users to download/share a professionally styled PDF version of their personality report."
         }
       ]
     },
@@ -34,76 +50,124 @@
       "name": "MVP (Phase 1 - Core System)",
       "cards": [
         {
-          "name": "Define SMART goals for MVP"
+          "name": "Define SMART goals for MVP",
+          "labels": ["planning"],
+          "description": "Set Specific, Measurable, Achievable, Relevant, Time-bound objectives for the first build (e.g., “Launch v0.1 with 20 questions and user registration by [date]”)."
         },
         {
-          "name": "Set up Trello, GitHub, and project README"
+          "name": "Set up Trello, GitHub, and project README",
+          "labels": ["planning"],
+          "description": "Initialize GitHub repo, configure project board in Trello (this board), and write a README outlining tech stack, setup instructions, and folder structure."
         },
         {
-          "name": "Create wireframes / mock UI of onboarding, test, result page"
+          "name": "Create wireframes / mock UI of onboarding, test, result page",
+          "labels": ["design", "frontend"],
+          "description": "Produce basic wireframes (Figma, Sketch, or pen-and-paper) to outline user flows: signup, question wizard, and result dashboard."
         },
         {
-          "name": "Set up Next.js + TypeScript project"
+          "name": "Set up Next.js + TypeScript project",
+          "labels": ["frontend"],
+          "description": "Bootstrap a new Next.js application with TypeScript—configure `tsconfig.json`, folder structure (`pages/`, `components/`, `lib/`)."
         },
         {
-          "name": "Install TailwindCSS + shadcn/ui components"
+          "name": "Install TailwindCSS + shadcn/ui components",
+          "labels": ["frontend", "design"],
+          "description": "Add TailwindCSS to the Next.js project. Install and configure shadcn/ui for prebuilt accessible components (buttons, cards, modals)."
         },
         {
-          "name": "Add Prisma + connect to Neon PostgreSQL"
+          "name": "Add Prisma + connect to Neon PostgreSQL",
+          "labels": ["backend", "database"],
+          "description": "Install Prisma, create `schema.prisma` model for `User`, `Question`, `Answer`, `ProfileResult`, and connect using Neon PostgreSQL URL (from env)."
         },
         {
-          "name": "Deploy staging site to AWS"
+          "name": "Deploy staging site to AWS",
+          "labels": ["devops"],
+          "description": "Configure deployment pipeline (e.g., Vercel or AWS Amplify). Ensure environment variables (Neon DB URL, Sentry DSN) are securely stored."
         },
         {
-          "name": "Set up Sentry for error monitoring"
+          "name": "Set up Sentry for error monitoring",
+          "labels": ["devops", "monitoring"],
+          "description": "Integrate Sentry SDK into Next.js—capture frontend and backend exceptions. Verify that errors appear in Sentry dashboard."
         },
         {
-          "name": "Draft 20\u201330 questions across trait dimensions"
+          "name": "Draft 20–30 questions across trait dimensions",
+          "labels": ["research"],
+          "description": "Write 20–30 Likert-scale questions that map to 5–8 core trait dimensions (e.g., extraversion, agreeableness, stability)."
         },
         {
-          "name": "Create questions.json or questions.ts"
+          "name": "Create questions.json or questions.ts",
+          "labels": ["backend", "research"],
+          "description": "Store questions in a JSON/TS config file with fields: `id`, `text`, `dimension`, `choices`, and `weights`."
         },
         {
-          "name": "Build answer model & scoring logic (rule-based)"
+          "name": "Build answer model & scoring logic (rule-based)",
+          "labels": ["backend"],
+          "description": "Implement a function that iterates through user answers, sums weights per dimension, normalizes scores, and outputs raw trait scores."
         },
         {
-          "name": "Store answers in state"
+          "name": "Store answers in state",
+          "labels": ["frontend"],
+          "description": "Build React context or useState hooks to store user answers client-side until submission—handles form state as user progresses."
         },
         {
-          "name": "Display results based on score ranges"
+          "name": "Display results based on score ranges",
+          "labels": ["frontend", "design"],
+          "description": "Create a component that visualizes normalized trait scores (e.g., bar graphs or radar charts) using Chart.js or Recharts."
         },
         {
-          "name": "Assign personality types with names + descriptions"
+          "name": "Assign personality types with names + descriptions",
+          "labels": ["research", "backend"],
+          "description": "Map scored dimensions to a custom type (e.g., “Sunfire” or “Anchor”), then attach a short description for each type in a lookup table."
         },
         {
-          "name": "Design results page (score bars or radar chart)"
+          "name": "Design results page (score bars or radar chart)",
+          "labels": ["frontend", "design"],
+          "description": "Mock up (and then code) a results dashboard page that shows: user name, date, trait scores, assigned personality type, and a “Download PDF” button."
         },
         {
-          "name": "Create personality type component"
+          "name": "Create personality type component",
+          "labels": ["frontend"],
+          "description": "Build a reusable React component that displays a personality type’s name, icon, and descriptive text."
         },
         {
-          "name": "Store results in DB"
+          "name": "Store results in DB",
+          "labels": ["backend", "database"],
+          "description": "After scoring, save the `ProfileResult` to PostgreSQL with fields: `userId`, `timestamp`, `scores`, `typeId`."
         },
         {
-          "name": "Allow user to retake the test"
+          "name": "Allow user to retake the test",
+          "labels": ["frontend", "backend"],
+          "description": "Add a “Retake Test” button on the dashboard that clears previous responses and starts the wizard anew. If logged in, archive old results."
         },
         {
-          "name": "Set up email sending (SendGrid or Resend)"
+          "name": "Set up email sending (SendGrid or Resend)",
+          "labels": ["backend", "integration"],
+          "description": "Integrate SendGrid/Resend SDK to send emails. Verify by sending a test email from a backend route."
         },
         {
-          "name": "Send personality report after completion"
+          "name": "Send personality report after completion",
+          "labels": ["backend", "integration"],
+          "description": "After a user completes the test and signs up (or logs in), trigger an email with a summary of their scores and assigned type."
         },
         {
-          "name": "Set up email reminders (weekly advice)"
+          "name": "Set up email reminders (weekly advice)",
+          "labels": ["backend", "integration"],
+          "description": "Create a scheduled job (cron or AWS Lambda) that selects users and sends weekly “self-awareness tips” based on their personality type."
         },
         {
-          "name": "Add basic authentication"
+          "name": "Add basic authentication",
+          "labels": ["backend", "auth"],
+          "description": "Integrate NextAuth.js (email-magic link or email/password) with Prisma. Build login, signup, and protected dashboard routes."
         },
         {
-          "name": "Add user dashboard to view history"
+          "name": "Add user dashboard to view history",
+          "labels": ["frontend"],
+          "description": "Create a /dashboard page that lists past `ProfileResult` entries (date, type) and allows navigation to view details."
         },
         {
-          "name": "Add loading screens and feedback"
+          "name": "Add loading screens and feedback",
+          "labels": ["frontend", "ux"],
+          "description": "Implement spinners or skeleton loaders during data fetches—improve perceived performance and reduce user frustration."
         }
       ]
     },
@@ -119,46 +183,74 @@
       "name": "Future Features (Phase 2+)",
       "cards": [
         {
-          "name": "Add chatbot (Coach Self) to answer questions"
+          "name": "Add chatbot (Coach Self) to answer questions",
+          "labels": ["ai"],
+          "description": "Integrate an LLM (e.g., OpenAI GPT-4) to power a conversational “Coach Self” interface—answer follow-up personality questions."
         },
         {
-          "name": "Train AI on user chat + data to give custom advice"
+          "name": "Train AI on user chat + data to give custom advice",
+          "labels": ["ai", "research"],
+          "description": "Collect anonymized chat transcripts (with consent) to fine­tune or prompt‐engineer an LLM that gives personalized growth advice."
         },
         {
-          "name": "Summarize behavior across time"
+          "name": "Summarize behavior across time",
+          "labels": ["analytics", "ai"],
+          "description": "Develop logic that aggregates a user’s past results and generates longitudinal summaries (e.g., “You’ve grown more open over past 3 months”)."
         },
         {
-          "name": "Let user ask 'Why do I act like this?' and get LLM insight"
+          "name": "Let user ask 'Why do I act like this?' and get LLM insight",
+          "labels": ["ai"],
+          "description": "Allow free-text questions about personality—send them (with context) to GPT-4, and return a human-like explanation based on known traits."
         },
         {
-          "name": "Add consent-based webcam facial emotion detection"
+          "name": "Add consent-based webcam facial emotion detection",
+          "labels": ["ai", "feature"],
+          "description": "Use a browser‐based library (e.g., Face API or TensorFlow.js) to detect emotions from webcam feed—opt-in only, with clear disclosure."
         },
         {
-          "name": "Add social media import (Twitter, Instagram insights)"
+          "name": "Add social media import (Twitter, Instagram insights)",
+          "labels": ["backend", "integration"],
+          "description": "Allow users (with explicit permission) to link Twitter/Instagram—fetch public posts and run sentiment/personality analysis in batch."
         },
         {
-          "name": "Track click behavior and interactions to infer mood"
+          "name": "Track click behavior and interactions to infer mood",
+          "labels": ["frontend", "analytics"],
+          "description": "Instrument frontend (e.g., mouse movement, click speed) to gather behavioral signals—store in DB for future AI processing."
         },
         {
-          "name": "Use mobile gyroscope/microphone to analyze energy"
+          "name": "Use mobile gyroscope/microphone to analyze energy",
+          "labels": ["frontend", "feature"],
+          "description": "On mobile browsers, capture motion and audio (with permission) to derive an “energy level” metric for personality context."
         },
         {
-          "name": "Build React Native / Expo app"
+          "name": "Build React Native / Expo app",
+          "labels": ["frontend", "mobile"],
+          "description": "Create a companion mobile app in React Native so users can take tests on the go and receive push notifications."
         },
         {
-          "name": "Add push notifications"
+          "name": "Add push notifications",
+          "labels": ["backend", "integration"],
+          "description": "Integrate with Firebase Cloud Messaging or Apple/Google Push services to deliver real-time alerts on mobile."
         },
         {
-          "name": "Sync results across web + app"
+          "name": "Sync results across web + app",
+          "labels": ["backend", "integration"],
+          "description": "Ensure that a user’s profile and past results are synced between the web dashboard and mobile app in real time."
         },
         {
-          "name": "Add premium in-app coaching sessions"
+          "name": "Add premium in-app coaching sessions",
+          "labels": ["business", "feature"],
+          "description": "Allow users to purchase or unlock guided coaching sessions—either AI-driven or human-coached modules."
         },
         {
-          "name": "Journal/diary integration"
+          "name": "Journal/diary integration",
+          "labels": ["feature"],
+          "description": "Provide a private journaling space where users can log daily reflections—optionally linked to personality insights."
         },
         {
-          "name": "Daily self-awareness reminders"
+          "name": "Daily self-awareness reminders",
+          "labels": ["feature"],
+          "description": "Send daily prompts or micro-tips (by email or in-app) to encourage users to reflect on their personality traits."
         }
       ]
     },
@@ -166,25 +258,39 @@
       "name": "Monetization",
       "cards": [
         {
-          "name": "Offer freemium model with limited tests"
+          "name": "Offer freemium model with limited tests",
+          "labels": ["business"],
+          "description": "Define free tier limits (e.g., one test per month) and premium features (unlimited tests, detailed historical trends)."
         },
         {
-          "name": "Add pricing page with value explanation"
+          "name": "Add pricing page with value explanation",
+          "labels": ["frontend", "business"],
+          "description": "Create a “Pricing” page in Next.js that outlines each plan’s features, costs, and a CTA to subscribe via Stripe."
         },
         {
-          "name": "Integrate Stripe for subscription"
+          "name": "Integrate Stripe for subscription",
+          "labels": ["backend", "integration", "business"],
+          "description": "Set up Stripe API, create subscription plans, implement checkout flow, and handle webhook events for billing status."
         },
         {
-          "name": "Premium feature: PDF export, private AI coach, personality history"
+          "name": "Premium feature: PDF export, private AI coach, personality history",
+          "labels": ["business", "feature"],
+          "description": "Lock PDF export, AI chat, and extended personality history behind a paywall—only accessible to paying users."
         },
         {
-          "name": "Affiliate marketing (books, courses)"
+          "name": "Affiliate marketing (books, courses)",
+          "labels": ["marketing"],
+          "description": "Partner with relevant personal development authors or platforms; embed affiliate links or discount codes in the app."
         },
         {
-          "name": "Offer white-label version to therapists/coaches"
+          "name": "Offer white-label version to therapists/coaches",
+          "labels": ["business"],
+          "description": "Create a customizable “Self” dashboard that therapists or coaches can brand for their own clients at a higher subscription tier."
         },
         {
-          "name": "Allow gifting of Self Premium to friends"
+          "name": "Allow gifting of Self Premium to friends",
+          "labels": ["business", "feature"],
+          "description": "Implement a “gift code” system for one-time or recurring gift subscriptions. Add a signup flow that redeems gift codes."
         }
       ]
     },
@@ -192,19 +298,29 @@
       "name": "Metrics & Analytics",
       "cards": [
         {
-          "name": "Track test completions"
+          "name": "Track test completions",
+          "labels": ["analytics"],
+          "description": "Instrument the backend to log each completed test—store timestamp, userId, and typeId for usage metrics."
         },
         {
-          "name": "Track which traits are most common"
+          "name": "Track which traits are most common",
+          "labels": ["analytics", "research"],
+          "description": "Query the database daily to compute distribution of dominant personality types and trait scores among users."
         },
         {
-          "name": "Monitor funnel drop-off"
+          "name": "Monitor funnel drop-off",
+          "labels": ["analytics"],
+          "description": "Set up a funnel in PostHog: registration→start test→complete test→view results. Identify high-drop steps."
         },
         {
-          "name": "Use PostHog or Plausible for analytics"
+          "name": "Use PostHog or Plausible for analytics",
+          "labels": ["analytics", "devops"],
+          "description": "Integrate PostHog or Plausible tracking scripts into the Next.js app to capture page views, clicks, and events."
         },
         {
-          "name": "Track email open rates and engagement"
+          "name": "Track email open rates and engagement",
+          "labels": ["analytics", "integration"],
+          "description": "Use SendGrid (or Resend) webhooks to log when emails are opened, clicked, and track engagement metrics in DB."
         }
       ]
     },
@@ -212,22 +328,34 @@
       "name": "Infrastructure & DevOps",
       "cards": [
         {
-          "name": "Set up GitHub Actions CI/CD"
+          "name": "Set up GitHub Actions CI/CD",
+          "labels": ["devops"],
+          "description": "Create GitHub Actions workflows for linting, testing, building, and deploying the Next.js app on push to `main`."
         },
         {
-          "name": "Automatic deployment to AWS (or Vercel for dev)"
+          "name": "Automatic deployment to AWS (or Vercel for dev)",
+          "labels": ["devops"],
+          "description": "Configure automatic deploys: connect GitHub repo to Vercel or AWS Amplify/Codedeploy for prod/staging branches."
         },
         {
-          "name": "Secure .env management across environments"
+          "name": "Secure .env management across environments",
+          "labels": ["devops", "security"],
+          "description": "Ensure `.env` files (API keys, DB URLs) are stored in GitHub Secrets or AWS Parameter Store—never commit secrets."
         },
         {
-          "name": "Connect Prisma to Neon DB with schema sync"
+          "name": "Connect Prisma to Neon DB with schema sync",
+          "labels": ["devops", "database"],
+          "description": "Set up a CI step that runs `prisma migrate deploy` on production and `prisma db push` on staging to sync database schema."
         },
         {
-          "name": "Add Sentry for monitoring & alerts"
+          "name": "Add Sentry for monitoring & alerts",
+          "labels": ["devops", "monitoring"],
+          "description": "Configure Sentry alert rules (e.g., email or Slack) to notify on critical errors or performance issues."
         },
         {
-          "name": "Backup DB periodically"
+          "name": "Backup DB periodically",
+          "labels": ["devops", "database"],
+          "description": "Schedule nightly snapshots of the Neon PostgreSQL database and store backups securely (e.g., AWS S3 with versioning)."
         }
       ]
     },
@@ -235,19 +363,29 @@
       "name": "Research & Experiments",
       "cards": [
         {
-          "name": "Study Big Five, DISC, MBTI mappings"
+          "name": "Study Big Five, DISC, MBTI mappings",
+          "labels": ["research"],
+          "description": "Deep-dive into how Big Five traits map to MBTI and DISC categories—document overlaps and divergences."
         },
         {
-          "name": "Analyze Tim Lahaye\u2019s trait categorization"
+          "name": "Analyze Tim Lahaye’s trait categorization",
+          "labels": ["research"],
+          "description": "Extract Tim Lahaye’s temperament logic and see how to convert it into weighted scoring rules."
         },
         {
-          "name": "Experiment with trait clustering in AI"
+          "name": "Experiment with trait clustering in AI",
+          "labels": ["ai", "research"],
+          "description": "Use an unsupervised learning algorithm (e.g., K-means) on sample user responses to discover emergent trait clusters."
         },
         {
-          "name": "Run a small beta test with 10 users"
+          "name": "Run a small beta test with 10 users",
+          "labels": ["research", "feature"],
+          "description": "Recruit friends or colleagues to take the test—gather feedback on question clarity, UX, and perceived accuracy."
         },
         {
-          "name": "Gather real personality data anonymously"
+          "name": "Gather real personality data anonymously",
+          "labels": ["research", "analytics"],
+          "description": "Collect anonymized test results (with consent) to build a baseline distribution of scores for calibration."
         }
       ]
     }
